@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C37500A2E0B2C2100FA3E1C /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3750092E0B2C2100FA3E1C /* AppsFlyerLib-Static */; };
+		5CCEF7192E0AE73E00B7FCEB /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CCEF7182E0AE73E00B7FCEB /* FacebookCore */; };
+		9B2573B305A8D8A2C2FBBC65 /* Pods_Dubai_Parks_Booking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515BB9E1B1C294ACC5F8E980 /* Pods_Dubai_Parks_Booking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.release.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.release.xcconfig"; sourceTree = "<group>"; };
+		515BB9E1B1C294ACC5F8E980 /* Pods_Dubai_Parks_Booking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dubai_Parks_Booking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCEF5CF2E0992BA00B7FCEB /* Dubai Parks Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Parks Booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.debug.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5CCEF7162E0AE66100B7FCEB /* Exceptions for "Dubai Parks Booking" folder in "Dubai Parks Booking" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5CCEF5CE2E0992BA00B7FCEB /* Dubai Parks Booking */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5CCEF5D12E0992BA00B7FCEB /* Dubai Parks Booking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5CCEF7162E0AE66100B7FCEB /* Exceptions for "Dubai Parks Booking" folder in "Dubai Parks Booking" target */,
+			);
+			path = "Dubai Parks Booking";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CCEF5CC2E0992BA00B7FCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCEF7192E0AE73E00B7FCEB /* FacebookCore in Frameworks */,
+				5C37500A2E0B2C2100FA3E1C /* AppsFlyerLib-Static in Frameworks */,
+				9B2573B305A8D8A2C2FBBC65 /* Pods_Dubai_Parks_Booking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B57F8F6804FC147E022A3C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */,
+				41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5CCEF5C62E0992BA00B7FCEB = {
+			isa = PBXGroup;
+			children = (
+				5CCEF5D12E0992BA00B7FCEB /* Dubai Parks Booking */,
+				5CCEF7172E0AE73E00B7FCEB /* Frameworks */,
+				5CCEF5D02E0992BA00B7FCEB /* Products */,
+				3B57F8F6804FC147E022A3C9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5CCEF5D02E0992BA00B7FCEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CCEF5CF2E0992BA00B7FCEB /* Dubai Parks Booking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CCEF7172E0AE73E00B7FCEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515BB9E1B1C294ACC5F8E980 /* Pods_Dubai_Parks_Booking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CCEF5CE2E0992BA00B7FCEB /* Dubai Parks Booking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CCEF5DD2E0992BB00B7FCEB /* Build configuration list for PBXNativeTarget "Dubai Parks Booking" */;
+			buildPhases = (
+				8308143891C9B41A944E20C2 /* [CP] Check Pods Manifest.lock */,
+				5CCEF5CB2E0992BA00B7FCEB /* Sources */,
+				5CCEF5CC2E0992BA00B7FCEB /* Frameworks */,
+				5CCEF5CD2E0992BA00B7FCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5CCEF5D12E0992BA00B7FCEB /* Dubai Parks Booking */,
+			);
+			name = "Dubai Parks Booking";
+			packageProductDependencies = (
+				5CCEF7182E0AE73E00B7FCEB /* FacebookCore */,
+				5C3750092E0B2C2100FA3E1C /* AppsFlyerLib-Static */,
+			);
+			productName = "Dubai Parks Booking";
+			productReference = 5CCEF5CF2E0992BA00B7FCEB /* Dubai Parks Booking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CCEF5C72E0992BA00B7FCEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					5CCEF5CE2E0992BA00B7FCEB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 5CCEF5CA2E0992BA00B7FCEB /* Build configuration list for PBXProject "Dubai Parks Booking" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CCEF5C62E0992BA00B7FCEB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5CCEF7142E0AD80F00B7FCEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5CCEF7152E0AE51200B7FCEB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				5C3750082E0B2C2100FA3E1C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5CCEF5D02E0992BA00B7FCEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CCEF5CE2E0992BA00B7FCEB /* Dubai Parks Booking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CCEF5CD2E0992BA00B7FCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8308143891C9B41A944E20C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dubai Parks Booking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CCEF5CB2E0992BA00B7FCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CCEF5DB2E0992BB00B7FCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CCEF5DC2E0992BB00B7FCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CCEF5DE2E0992BB00B7FCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dubai Parks Booking/Preview Content\"";
+				DEVELOPMENT_TEAM = Z24M4HH7WL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dubai-Parks-Booking-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dubai Parks Day Pass";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide a more personalized experience, including relevant ads and content, while helping us improve our services.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dubai.parks.day.pass.booking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CCEF5DF2E0992BB00B7FCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dubai Parks Booking/Preview Content\"";
+				DEVELOPMENT_TEAM = Z24M4HH7WL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dubai-Parks-Booking-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dubai Parks Day Pass";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide a more personalized experience, including relevant ads and content, while helping us improve our services.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dubai.parks.day.pass.booking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CCEF5CA2E0992BA00B7FCEB /* Build configuration list for PBXProject "Dubai Parks Booking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCEF5DB2E0992BB00B7FCEB /* Debug */,
+				5CCEF5DC2E0992BB00B7FCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CCEF5DD2E0992BB00B7FCEB /* Build configuration list for PBXNativeTarget "Dubai Parks Booking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCEF5DE2E0992BB00B7FCEB /* Debug */,
+				5CCEF5DF2E0992BB00B7FCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C3750082E0B2C2100FA3E1C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.0;
+			};
+		};
+		5CCEF7142E0AD80F00B7FCEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+		5CCEF7152E0AE51200B7FCEB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C3750092E0B2C2100FA3E1C /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3750082E0B2C2100FA3E1C /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		5CCEF7182E0AE73E00B7FCEB /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CCEF7152E0AE51200B7FCEB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5CCEF5C72E0992BA00B7FCEB /* Project object */;
+}

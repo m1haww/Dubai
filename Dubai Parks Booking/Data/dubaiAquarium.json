@@ -1,0 +1,125 @@
+{
+  "sections": [
+    {
+      "title": "Beneath The Sea",
+      "subtitle": "Unveiling Ocean Mysteries",
+      "description": "Add a stunning new dimension to your experience at Dubai Aquarium & Underwater Zoo by entering the larger-than-life aquarium tunnel. Step into the diversity of the open ocean as you walk through this extraordinary 48-metre-long tunnel, 11 metres below the surface. Watch colourful fish dart between coral formations and witness rays glide gracefully overhead.",
+      "items": [
+        {
+          "title": "Walk Amongst Marine Life",
+          "description": "Feel the magic as you become part of this underwater world, surrounded by a vibrant tapestry of fish and rays."
+        },
+        {
+          "title": "Witness the Feeding Frenzy",
+          "description": "Witness a thrilling spectacle as skilled divers engage in feeding sessions with sharks and rays, offering a glimpse into their fascinating feeding behaviours."
+        },
+        {
+          "title": "Discover Tranquillity in the Deep",
+          "description": "Immerse yourself in the peaceful ambiance of the tunnel. Escape the everyday as you observe the movements of the underwater world."
+        },
+        {
+          "title": "360-Degree Ocean Views",
+          "description": "Experience the wonder of being completely surrounded by marine life with our unique tunnel design offering panoramic underwater views."
+        }
+      ]
+    },
+    {
+      "title": "Aquatic Encounters",
+      "subtitle": "Journey Through Diverse Ecosystems",
+      "description": "Underwater Zoo showcases the spectacular diversity of life in our rivers and oceans through three distinct ecological zones – Rainforest, Rocky Shore and Living Ocean. Watch out for a vast array of aquatic animals across 40 individual displays:",
+      "items": [
+        {
+          "title": "Rainforest",
+          "description": "Journey through lush vegetation where freshwater fish thrive alongside amphibians and reptiles. Piranhas, giant catfish, playful otters and water rats are just some of the animals you'll meet here."
+        },
+        {
+          "title": "Rocky Shore",
+          "description": "Where land meets sea, experience rugged beauty where only the toughest survive. Reach out and touch some of the hardier rock pool inhabitants for a truly immersive experience."
+        },
+        {
+          "title": "Living Ocean",
+          "description": "Venture into this underwater world where coral reefs shimmer and graceful sharks patrol the expanse."
+        },
+        {
+          "title": "Get Up Close and Personal",
+          "description": "Get nose-to-nose with our incredible inhabitants including playful otters and mischievous penguins!"
+        }
+      ]
+    },
+    {
+      "title": "Conservation & Education",
+      "subtitle": "Making Waves for Wildlife",
+      "description": "Join us in our mission to protect marine life through education and conservation. Our dedicated team works tirelessly to ensure the well-being of our 140+ species while contributing to global conservation efforts.",
+      "items": [
+        {
+          "title": "Behind the Scenes Tours",
+          "description": "Go beyond the glass and discover what it takes to maintain one of the world's largest aquarium tanks. Learn about our state-of-the-art filtration systems and meet our passionate marine biologists."
+        },
+        {
+          "title": "Educational Programs",
+          "description": "Engage with interactive workshops designed for all ages. From school field trips to specialized marine biology courses, we offer unique learning experiences that inspire the next generation of ocean advocates."
+        },
+        {
+          "title": "Rescue & Rehabilitation",
+          "description": "Learn about our efforts to rescue and rehabilitate injured marine animals, preparing them for their return to the wild whenever possible."
+        },
+        {
+          "title": "Research Initiatives",
+          "description": "Discover our ongoing research projects focused on marine conservation, breeding programs, and understanding ocean ecosystems to protect them for future generations."
+        }
+      ]
+    },
+    {
+      "title": "Unforgettable Experiences",
+      "subtitle": "Dive Into Adventure",
+      "description": "Take your visit to the next level with our exclusive experiences designed to bring you closer to marine life than ever before.",
+      "items": [
+        {
+          "title": "Shark Diving",
+          "description": "For certified divers, experience the ultimate adrenaline rush swimming alongside our magnificent sharks in complete safety with our experienced dive masters."
+        },
+        {
+          "title": "Cage Snorkeling",
+          "description": "Not a certified diver? No problem! Our cage snorkeling experience lets you safely observe sharks and rays up close while floating at the surface."
+        },
+        {
+          "title": "Glass Bottom Boat",
+          "description": "Glide across the surface of our main tank in our glass-bottom boat, offering a unique perspective of the underwater world below."
+        },
+        {
+          "title": "VR Zoo",
+          "description": "Embark on a virtual reality journey to explore marine habitats from around the globe, coming face-to-face with creatures from the deepest oceans."
+        }
+      ]
+    },
+    {
+      "title": "Plan Your Visit",
+      "subtitle": "Making Memories That Last",
+      "description": "Everything you need to know to make the most of your visit to Dubai Aquarium & Underwater Zoo.",
+      "items": [
+        {
+          "title": "Opening Hours",
+          "description": "Daily 10:00 AM - 10:00 PM (Last entry 9:30 PM). Extended hours during weekends and public holidays. Please check our website for special event timings."
+        },
+        {
+          "title": "Combo Packages",
+          "description": "Maximize your experience with our special packages that include Underwater Zoo access, Behind the Scenes tours, and exclusive animal encounters. Save up to 30% when booking multiple experiences."
+        },
+        {
+          "title": "Birthday Parties",
+          "description": "Celebrate your special day surrounded by marine wonders with our customized birthday packages including exclusive tours, educational activities, and a dedicated party area with underwater views."
+        },
+        {
+          "title": "Annual Passes",
+          "description": "Dive in all year round with our annual membership, offering unlimited visits, exclusive events, special discounts on experiences, and priority booking for new attractions."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Our 10-million litre tank is one of the largest suspended aquariums in the world",
+    "We're home to over 33,000 aquatic animals representing more than 140 species",
+    "The aquarium panel is 32.88 meters wide, 8.3 meters tall, and 750mm thick",
+    "Our King Croc weighs over 750kg and is over 40 years old"
+  ]
+}

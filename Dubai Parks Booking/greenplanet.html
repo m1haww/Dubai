@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Planet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        .hero-wrapper {
+            position: relative;
+            height: 400px;
+            border-radius: 0 0 16px 16px;
+            overflow: hidden;
+        }
+        
+        .hero-section {
+            width: 100%;
+            height: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .hero-section::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .image-slider {
+            display: flex;
+            height: 100%;
+        }
+        
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+        }
+        
+        .slide:nth-child(1) {
+            background-image: url('https://storage.googleapis.com/vucket-1/875721c45ebdbf2c422e965000ce5ebbeb775032.png');
+        }
+        
+        .slide:nth-child(2) {
+            background-image: url('https://storage.googleapis.com/vucket-1/fed041c1007c820141a9f9986fc365e0026339ae.jpg');
+        }
+        
+        .slide:nth-child(3) {
+            background-image: url('https://storage.googleapis.com/vucket-1/a53d3707c4388aeea05e85b62889a515aa2ac0e2.png');
+        }
+        
+        .slide:nth-child(4) {
+            background-image: url('https://storage.googleapis.com/vucket-1/dd0d9f90531f61eaa281c2dfd850a64ec8abf8fd.png');
+        }
+        
+        .slide:nth-child(5) {
+            background-image: url('https://storage.googleapis.com/vucket-1/28d7bb8cb88416b071805fbbe8e45f6573e9e939.png');
+        }
+        
+        .dots-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        
+        .dots-indicator .dot {
+            pointer-events: all;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .dot.active {
+            background-color: #703CF1;
+        }
+        
+        .dot:hover {
+            background-color: rgba(112, 60, 241, 0.7);
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: white;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 16px;
+            text-align: center;
+            border: none;
+            background: none;
+            font-size: 16px;
+            color: #999;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab.active {
+            color: #703CF1;
+            border-bottom-color: #703CF1;
+            font-weight: 600;
+        }
+        
+        .content {
+            padding: 24px;
+            padding-bottom: 100px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .main-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 24px;
+        }
+        
+        .highlight {
+            margin-bottom: 20px;
+        }
+        
+        .highlight-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #703CF1;
+            margin-bottom: 8px;
+        }
+        
+        .highlight-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .book-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: #703CF1;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .book-button:hover {
+            background-color: #5a2fd1;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .tickets-content, .hours-content {
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-section" id="heroSection">
+                <div class="image-slider">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+            </div>
+            <div class="dots-indicator">
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+                <div class="dot" data-slide="3"></div>
+                <div class="dot" data-slide="4"></div>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" data-tab="description">Description</button>
+            <button class="tab" data-tab="tickets">Tickets</button>
+            <button class="tab" data-tab="hours">Opening hours</button>
+        </div>
+        
+        <div class="content">
+            <div id="description" class="tab-content active">
+                <div class="section-title">Nature's Wonder</div>
+                <h1 class="main-title">The Green Planet</h1>
+                <p class="description">
+                    Step into a lush, tropical paradise at The Green Planet, Dubai's stunning indoor rainforest. Home to over 3,000 plants and animals, this bio-dome recreates the magical atmosphere of a real rainforest, complete with free-flying birds, fascinating reptiles, and exotic flora from around the world.
+                </p>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Canopy Walk:</div>
+                    <div class="highlight-text">
+                        Experience the rainforest from above as you walk through the canopy on elevated walkways, getting up close with tropical birds and discovering the secrets of the forest crown.
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Wildlife Encounters:</div>
+                    <div class="highlight-text">
+                        Meet amazing creatures including colorful toucans, playful sloths, exotic snakes, and vibrant butterflies in their naturalistic habitat.
+                    </div>
+                </div>
+                
+                <!-- Section 1: Immersive Experience -->
+                <div class="section">
+                    <div class="section-title">Immersive Experience</div>
+                    <h2 class="main-title">A Living Ecosystem</h2>
+                    <p class="description">
+                        The Green Planet is more than just an attraction – it's a living, breathing ecosystem that educates and inspires. From the forest floor to the emergent layer, each level offers unique discoveries and unforgettable encounters with nature.
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">The Flooded Rainforest:</div>
+                        <div class="highlight-text">
+                            Discover the mysterious underwater world of the Amazon, home to arapaima, arowana, and other exotic fish species that thrive in flooded forest conditions.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">The Forest Floor:</div>
+                        <div class="highlight-text">
+                            Explore the dark understory where decomposers work their magic, and creatures like porcupines, armadillos, and various reptiles make their home.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">The Canopy:</div>
+                        <div class="highlight-text">
+                            Ascend to the treetops where life explodes in color and sound, with tropical birds, monkeys, and the famous two-toed sloth residing among the branches.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 2: Conservation Mission -->
+                <div class="section">
+                    <div class="section-title">Our Mission</div>
+                    <h2 class="main-title">Conservation Through Education</h2>
+                    <p class="description">
+                        At The Green Planet, we believe in the power of education to drive conservation. Our bio-dome serves as a living classroom, inspiring visitors to understand and protect the world's precious rainforests.
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Breeding Programs:</div>
+                        <div class="highlight-text">
+                            We participate in international breeding programs for endangered species, contributing to global conservation efforts and helping preserve biodiversity.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Educational Workshops:</div>
+                        <div class="highlight-text">
+                            Regular workshops and guided tours help visitors understand the critical role rainforests play in our planet's health and climate regulation.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Sustainability Initiatives:</div>
+                        <div class="highlight-text">
+                            Learn about sustainable practices and how small actions can make a big difference in protecting our environment and wildlife habitats.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 3: Visitor Information -->
+                <div class="section">
+                    <div class="section-title">Plan Your Visit</div>
+                    <h2 class="main-title">Essential Information</h2>
+                    <p class="description">
+                        Make the most of your rainforest adventure with these helpful tips and information about visiting The Green Planet.
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Best Time to Visit:</div>
+                        <div class="highlight-text">
+                            Early mornings offer the best animal activity, while afternoons provide optimal lighting for photography enthusiasts and nature lovers.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">What to Bring:</div>
+                        <div class="highlight-text">
+                            Comfortable walking shoes, a camera, and a sense of adventure. The bio-dome maintains tropical conditions year-round with controlled humidity.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Duration:</div>
+                        <div class="highlight-text">
+                            Allow 2-3 hours to fully explore all four levels and enjoy the various animal encounters and educational exhibits throughout the experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tickets" class="tab-content">
+                <div class="tickets-content">
+                    <h2>Ticket Information</h2>
+                    <p>Ticket prices and booking options will be displayed here.</p>
+                </div>
+            </div>
+            
+            <div id="hours" class="tab-content">
+                <div class="hours-content">
+                    <h2>Opening Hours</h2>
+                    <p>Operating hours and schedule information will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="tel:+971234567890" class="book-button">Call to Book</a>
+    </div>
+    
+    <script>
+        // Image slider functionality
+        const heroSection = document.getElementById('heroSection');
+        const dots = document.querySelectorAll('.dot');
+        
+        function updateActiveDot() {
+            const scrollLeft = heroSection.scrollLeft;
+            const slideWidth = heroSection.clientWidth;
+            const slideIndex = Math.round(scrollLeft / slideWidth);
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === slideIndex);
+            });
+        }
+        
+        function scrollToSlide(slideIndex) {
+            const slideWidth = heroSection.clientWidth;
+            const scrollPosition = slideIndex * slideWidth;
+            heroSection.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Dot click functionality
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const slideIndex = parseInt(dot.dataset.slide);
+                scrollToSlide(slideIndex);
+            });
+        });
+        
+        // Listen for scroll events to update dots
+        let scrollTimeout;
+        heroSection.addEventListener('scroll', () => {
+            // Clear any existing timeout
+            clearTimeout(scrollTimeout);
+            
+            // Update dots immediately
+            updateActiveDot();
+            
+            // Also update after scroll ends for accuracy
+            scrollTimeout = setTimeout(updateActiveDot, 150);
+        });
+        
+        // Update dots on touch end for better mobile experience
+        heroSection.addEventListener('touchend', () => {
+            setTimeout(updateActiveDot, 100);
+        });
+        
+        // Initial dot update
+        updateActiveDot();
+        
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and content
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = tab.dataset.tab;
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

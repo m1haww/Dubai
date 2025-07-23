@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Aquarium</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            position: relative;
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .dots-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .dot.active {
+            background-color: #703CF1;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: white;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 16px;
+            text-align: center;
+            border: none;
+            background: none;
+            font-size: 16px;
+            color: #999;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab.active {
+            color: #703CF1;
+            border-bottom-color: #703CF1;
+            font-weight: 600;
+        }
+        
+        .content {
+            padding: 24px;
+            padding-bottom: 100px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .main-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 24px;
+        }
+        
+        .highlight {
+            margin-bottom: 20px;
+        }
+        
+        .highlight-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #703CF1;
+            margin-bottom: 8px;
+        }
+        
+        .highlight-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .book-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: #703CF1;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .book-button:hover {
+            background-color: #5a2fd1;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .tickets-content, .hours-content {
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="dots-indicator">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" data-tab="description">Description</button>
+            <button class="tab" data-tab="tickets">Tickets</button>
+            <button class="tab" data-tab="hours">Opening hours</button>
+        </div>
+        
+        <div class="content">
+            <div id="description" class="tab-content active">
+                <div class="section-title">Dive into Wonder</div>
+                <h1 class="main-title">World's Largest Suspended Aquarium</h1>
+                <p class="description">
+                    Immerse yourself in a mesmerising underwater world at Dubai Aquarium & Underwater Zoo, one of the largest suspended aquariums on the planet! Journey beneath the surface and discover over 140 species and 300+ majestic sharks and rays, all housed within a 10-million-litre tank located on the ground floor of Dubai Mall.
+                </p>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Subaquatic Tunnel:</div>
+                    <div class="highlight-text">
+                        Embark on a 48-metre underwater adventure through a transparent tunnel, offering a 270-degree acrylic walkthrough tunnel from 11 metres below the surface, while sharks, rays and a kaleidoscope of marine life glide around you.
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-title">Beneath Your Feet:</div>
+                    <div class="highlight-text">
+                        Take a glass-bottom boat ride and watch the underwater world unfold directly beneath you.
+                    </div>
+                </div>
+                
+                <!-- Section 1: Beneath The Sea -->
+                <div class="section">
+                    <div class="section-title">Beneath The Sea</div>
+                    <h2 class="main-title">Unveiling Ocean Mysteries</h2>
+                    <p class="description">
+                        Add a stunning new dimension to your experience at Dubai Aquarium & Underwater Zoo by entering the larger-than-life aquarium tunnel. Step into the diversity of the open ocean as you walk through this extraordinary 48-metre-long tunnel, 11 metres below the surface. Watch colourful fish dart between coral formations and witness rays glide gracefully overhead.
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Walk Amongst Marine Life:</div>
+                        <div class="highlight-text">
+                            Feel the magic as you become part of this underwater world, surrounded by a vibrant tapestry of fish and rays.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Witness the Feeding Frenzy:</div>
+                        <div class="highlight-text">
+                            Witness a thrilling spectacle as skilled divers engage in feeding sessions with sharks and rays, offering a glimpse into their fascinating feeding behaviours.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Discover Tranquillity in the Deep:</div>
+                        <div class="highlight-text">
+                            Immerse yourself in the peaceful ambiance of the tunnel. Escape the everyday as you observe the movements of the underwater world.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 2: Aquatic Encounters -->
+                <div class="section">
+                    <div class="section-title">Aquatic Encounters</div>
+                    <h2 class="main-title">Journey Through Diverse Ecosystems</h2>
+                    <p class="description">
+                        Underwater Zoo showcases the spectacular diversity of life in our rivers and oceans through three distinct ecological zones – Rainforest, Rocky Shore and Living Ocean. Watch out for a vast array of aquatic animals across 40 individual displays:
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Rainforest:</div>
+                        <div class="highlight-text">
+                            Journey through lush vegetation where freshwater fish thrive alongside amphibians and reptiles. Piranhas, giant catfish, playful otters and water rats are just some of the animals you'll meet here.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Rocky Shore:</div>
+                        <div class="highlight-text">
+                            Where land meets sea, experience rugged beauty where only the toughest survive. Reach out and touch some of the hardier rock pool inhabitants for a truly immersive experience.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Living Ocean:</div>
+                        <div class="highlight-text">
+                            Venture into this underwater world where coral reefs shimmer and graceful sharks patrol the expanse.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 3: Amazing Facts -->
+                <div class="section">
+                    <div class="section-title">Amazing Facts</div>
+                    <h2 class="main-title">Did You Know?</h2>
+                    <p class="description">
+                        Dubai Aquarium & Underwater Zoo holds several records and fascinating facts that make it one of the most impressive aquatic attractions in the world.
+                    </p>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">World's Largest Viewing Panel:</div>
+                        <div class="highlight-text">
+                            Our 10-million litre tank features one of the world's largest acrylic viewing panels, measuring 32.88 meters wide and 8.3 meters tall.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Home to 33,000+ Animals:</div>
+                        <div class="highlight-text">
+                            We house over 33,000 aquatic animals representing more than 140 species, including over 300 sharks and rays combined.
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">Meet King Croc:</div>
+                        <div class="highlight-text">
+                            Our famous King Croc weighs over 750kg and is over 40 years old - one of the largest crocodiles in captivity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tickets" class="tab-content">
+                <div class="tickets-content">
+                    <h2>Ticket Information</h2>
+                    <p>Ticket prices and booking options will be displayed here.</p>
+                </div>
+            </div>
+            
+            <div id="hours" class="tab-content">
+                <div class="hours-content">
+                    <h2>Opening Hours</h2>
+                    <p>Operating hours and schedule information will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="tel:+971234567890" class="book-button">Call to Book</a>
+    </div>
+    
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and content
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = tab.dataset.tab;
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Enable cloud storage persistence
+        if (navigator.storage && navigator.storage.persist) {
+            navigator.storage.persist().then(function(persistent) {
+                console.log('Persistent storage:', persistent);
+            });
+        }
+    </script>
+</body>
+</html>

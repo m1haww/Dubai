@@ -1,0 +1,328 @@
+{
+  "name": "Dubai Aquarium & Underwater Zoo",
+  "location": "Dubai Mall, Dubai, UAE",
+  "overview": {
+    "title": "One of the World's Largest Aquariums",
+    "description": "Dubai Aquarium & Underwater Zoo is one of the largest suspended aquariums in the world. Located in The Dubai Mall, it features thousands of aquatic animals comprising over 140 species, including over 300 sharks and rays combined.",
+    "highlights": [
+      "10-million litre tank capacity",
+      "32.88 meters wide viewing panel",
+      "Over 33,000 aquatic animals",
+      "140+ different species"
+    ]
+  },
+  "sections": [
+    {
+      "id": "beneath-the-sea",
+      "title": "Beneath The Sea",
+      "subtitle": "Unveiling Ocean Mysteries",
+      "description": "Add a stunning new dimension to your experience at Dubai Aquarium & Underwater Zoo by entering the larger-than-life aquarium tunnel. Step into the diversity of the open ocean as you walk through this extraordinary 48-metre-long tunnel, 11 metres below the surface. Watch colourful fish dart between coral formations and witness rays glide gracefully overhead.",
+      "features": [
+        {
+          "title": "Walk Amongst Marine Life",
+          "description": "Feel the magic as you become part of this underwater world, surrounded by a vibrant tapestry of fish and rays.",
+          "duration": "Self-paced",
+          "included": true
+        },
+        {
+          "title": "Witness the Feeding Frenzy",
+          "description": "Witness a thrilling spectacle as skilled divers engage in feeding sessions with sharks and rays, offering a glimpse into their fascinating feeding behaviours.",
+          "schedule": "Daily at 10:00 AM and 2:00 PM",
+          "included": true
+        },
+        {
+          "title": "Discover Tranquillity in the Deep",
+          "description": "Immerse yourself in the peaceful ambiance of the tunnel. Escape the everyday as you observe the movements of the underwater world.",
+          "bestTime": "Early morning or late evening",
+          "included": true
+        },
+        {
+          "title": "360-Degree Ocean Views",
+          "description": "Experience the wonder of being completely surrounded by marine life with our unique tunnel design offering panoramic underwater views.",
+          "photoOpportunity": true,
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "aquatic-encounters",
+      "title": "Aquatic Encounters",
+      "subtitle": "Journey Through Diverse Ecosystems",
+      "description": "Underwater Zoo showcases the spectacular diversity of life in our rivers and oceans through three distinct ecological zones – Rainforest, Rocky Shore and Living Ocean. Watch out for a vast array of aquatic animals across 40 individual displays:",
+      "ecosystems": [
+        {
+          "title": "Rainforest",
+          "description": "Journey through lush vegetation where freshwater fish thrive alongside amphibians and reptiles. Piranhas, giant catfish, playful otters and water rats are just some of the animals you'll meet here.",
+          "species": ["Piranhas", "Giant Catfish", "Otters", "Water Rats", "Poison Dart Frogs", "Arapaima"],
+          "temperature": "24-28°C",
+          "environment": "Freshwater"
+        },
+        {
+          "title": "Rocky Shore",
+          "description": "Where land meets sea, experience rugged beauty where only the toughest survive. Reach out and touch some of the hardier rock pool inhabitants for a truly immersive experience.",
+          "species": ["Sea Stars", "Sea Urchins", "Hermit Crabs", "Anemones", "Small Sharks", "Octopuses"],
+          "interactive": true,
+          "environment": "Tidal Zone"
+        },
+        {
+          "title": "Living Ocean",
+          "description": "Venture into this underwater world where coral reefs shimmer and graceful sharks patrol the expanse.",
+          "species": ["Reef Sharks", "Eagle Rays", "Moray Eels", "Clownfish", "Seahorses", "Jellyfish"],
+          "tankSize": "2.5 million litres",
+          "environment": "Saltwater"
+        },
+        {
+          "title": "Get Up Close and Personal",
+          "description": "Get nose-to-nose with our incredible inhabitants including playful otters and mischievous penguins!",
+          "specialExperiences": ["Otter Feeding", "Penguin Encounter", "Touch Tank", "Behind Glass Meetings"],
+          "ageRestriction": "All ages",
+          "environment": "Multiple Habitats"
+        }
+      ]
+    },
+    {
+      "id": "conservation-education",
+      "title": "Conservation & Education",
+      "subtitle": "Making Waves for Wildlife",
+      "description": "Join us in our mission to protect marine life through education and conservation. Our dedicated team works tirelessly to ensure the well-being of our 140+ species while contributing to global conservation efforts.",
+      "programs": [
+        {
+          "title": "Behind the Scenes Tours",
+          "description": "Go beyond the glass and discover what it takes to maintain one of the world's largest aquarium tanks. Learn about our state-of-the-art filtration systems and meet our passionate marine biologists.",
+          "duration": "90 minutes",
+          "groupSize": "Maximum 15 people",
+          "price": "AED 150 per person",
+          "availability": "Daily at 11:00 AM and 3:00 PM"
+        },
+        {
+          "title": "Educational Programs",
+          "description": "Engage with interactive workshops designed for all ages. From school field trips to specialized marine biology courses, we offer unique learning experiences that inspire the next generation of ocean advocates.",
+          "programs": [
+            "School Field Trips",
+            "Marine Biology Workshops",
+            "Conservation Talks",
+            "Junior Aquarist Program"
+          ],
+          "ageGroups": "5-18 years",
+          "booking": "Advance booking required"
+        },
+        {
+          "title": "Rescue & Rehabilitation",
+          "description": "Learn about our efforts to rescue and rehabilitate injured marine animals, preparing them for their return to the wild whenever possible.",
+          "successStories": 47,
+          "currentPatients": 12,
+          "partnerOrganizations": ["WWF", "IFAW", "Local Wildlife Authority"]
+        },
+        {
+          "title": "Research Initiatives",
+          "description": "Discover our ongoing research projects focused on marine conservation, breeding programs, and understanding ocean ecosystems to protect them for future generations.",
+          "currentProjects": [
+            "Coral Reef Restoration",
+            "Shark Breeding Program",
+            "Microplastic Impact Study",
+            "Species Behavior Analysis"
+          ],
+          "publications": 23,
+          "collaborations": "International Marine Research Network"
+        }
+      ]
+    },
+    {
+      "id": "unforgettable-experiences",
+      "title": "Unforgettable Experiences",
+      "subtitle": "Dive Into Adventure",
+      "description": "Take your visit to the next level with our exclusive experiences designed to bring you closer to marine life than ever before.",
+      "experiences": [
+        {
+          "title": "Shark Diving",
+          "description": "For certified divers, experience the ultimate adrenaline rush swimming alongside our magnificent sharks in complete safety with our experienced dive masters.",
+          "requirements": "PADI Open Water certification or equivalent",
+          "duration": "30 minutes underwater",
+          "price": "AED 1,050",
+          "includes": ["All diving equipment", "Professional dive master", "Certificate of achievement", "Underwater photos"],
+          "minAge": 18
+        },
+        {
+          "title": "Cage Snorkeling",
+          "description": "Not a certified diver? No problem! Our cage snorkeling experience lets you safely observe sharks and rays up close while floating at the surface.",
+          "requirements": "Basic swimming ability",
+          "duration": "20 minutes",
+          "price": "AED 350",
+          "includes": ["Snorkeling equipment", "Safety briefing", "Instructor supervision"],
+          "minAge": 8
+        },
+        {
+          "title": "Glass Bottom Boat",
+          "description": "Glide across the surface of our main tank in our glass-bottom boat, offering a unique perspective of the underwater world below.",
+          "capacity": "10 passengers",
+          "duration": "15 minutes",
+          "price": "AED 125",
+          "schedule": "Every 30 minutes",
+          "accessibility": "Wheelchair accessible"
+        },
+        {
+          "title": "VR Zoo",
+          "description": "Embark on a virtual reality journey to explore marine habitats from around the globe, coming face-to-face with creatures from the deepest oceans.",
+          "experiences": [
+            "Swimming with Whales",
+            "Deep Sea Exploration",
+            "Prehistoric Ocean",
+            "Arctic Adventure"
+          ],
+          "duration": "5-7 minutes per experience",
+          "price": "AED 45 per experience",
+          "technology": "Latest VR headsets with 360° view"
+        }
+      ]
+    },
+    {
+      "id": "plan-your-visit",
+      "title": "Plan Your Visit",
+      "subtitle": "Making Memories That Last",
+      "description": "Everything you need to know to make the most of your visit to Dubai Aquarium & Underwater Zoo.",
+      "information": [
+        {
+          "title": "Opening Hours",
+          "details": {
+            "regular": "Sunday to Wednesday: 10:00 AM - 10:00 PM",
+            "weekend": "Thursday to Saturday: 10:00 AM - 12:00 AM",
+            "lastEntry": "30 minutes before closing",
+            "holidays": "Extended hours during public holidays",
+            "ramadan": "Special timings during Ramadan"
+          }
+        },
+        {
+          "title": "Combo Packages",
+          "packages": [
+            {
+              "name": "Explorer",
+              "includes": ["Aquarium Tunnel", "Underwater Zoo", "Glass Bottom Boat"],
+              "price": "AED 175",
+              "savings": "Save AED 50"
+            },
+            {
+              "name": "Adventure",
+              "includes": ["Explorer Package", "Behind the Scenes Tour", "VR Experience"],
+              "price": "AED 315",
+              "savings": "Save AED 85"
+            },
+            {
+              "name": "Ultimate",
+              "includes": ["All attractions", "Cage Snorkeling", "Souvenir Photo Package"],
+              "price": "AED 550",
+              "savings": "Save AED 150"
+            }
+          ]
+        },
+        {
+          "title": "Birthday Parties",
+          "description": "Celebrate your special day surrounded by marine wonders with our customized birthday packages including exclusive tours, educational activities, and a dedicated party area with underwater views.",
+          "packages": [
+            {
+              "name": "Basic",
+              "guests": "Up to 15 children",
+              "includes": ["Entry tickets", "Party area for 2 hours", "Birthday cake"],
+              "price": "AED 2,500"
+            },
+            {
+              "name": "Premium",
+              "guests": "Up to 25 children",
+              "includes": ["Basic package", "Animal encounter", "Party bags", "Dedicated host"],
+              "price": "AED 4,500"
+            }
+          ],
+          "addOns": ["Face painting", "Balloon artist", "Photography", "Custom decorations"]
+        },
+        {
+          "title": "Annual Passes",
+          "benefits": [
+            "Unlimited visits for 365 days",
+            "15% discount on all experiences",
+            "Priority booking for new attractions",
+            "Exclusive member events",
+            "Free parking at Dubai Mall",
+            "10% discount at gift shop",
+            "Birthday month special offers",
+            "Bring a friend free (once per month)"
+          ],
+          "pricing": {
+            "adult": "AED 750",
+            "child": "AED 550",
+            "family": "AED 2,200 (2 adults + 2 children)"
+          }
+        }
+      ]
+    }
+  ],
+  "facilities": {
+    "accessibility": [
+      "Wheelchair accessible throughout",
+      "Elevators to all levels",
+      "Accessible restrooms",
+      "Wheelchairs available for rent",
+      "Sign language tours available"
+    ],
+    "amenities": [
+      "Gift shop with marine-themed souvenirs",
+      "Café with underwater views",
+      "Baby changing facilities",
+      "Locker rental",
+      "Free WiFi",
+      "Photography services",
+      "ATM on site"
+    ],
+    "parking": {
+      "location": "Dubai Mall Parking",
+      "rates": "First 4 hours free with validation",
+      "valet": "Available at Fashion Avenue entrance"
+    }
+  },
+  "visitor_tips": [
+    "Best time to visit is weekday mornings for smaller crowds",
+    "Feeding times offer the most active animal viewing",
+    "Book experiences in advance to avoid disappointment",
+    "Allow 2-3 hours for a complete visit",
+    "Combine with Dubai Mall shopping for a full day out",
+    "Flash photography is not permitted",
+    "Download our mobile app for interactive maps and show times"
+  ],
+  "contact": {
+    "phone": "+971 4 448 5200",
+    "email": "info@dubaiaquarium.com",
+    "website": "www.thedubaiaquarium.com",
+    "social": {
+      "instagram": "@dubaiaquarium",
+      "facebook": "DubaiAquarium",
+      "twitter": "@DubaiAquarium"
+    },
+    "address": {
+      "mall": "The Dubai Mall",
+      "level": "Ground Floor",
+      "nearestMetro": "Burj Khalifa/Dubai Mall Station",
+      "gps": "25.1972° N, 55.2744° E"
+    }
+  },
+  "awards": [
+    "Certificate of Excellence - TripAdvisor 2023",
+    "Best Family Attraction - Time Out Dubai 2022",
+    "Green Tourism Award 2021",
+    "Excellence in Conservation 2020"
+  ],
+  "facts": {
+    "interesting": [
+      "Our 10-million litre tank is one of the largest suspended aquariums in the world",
+      "We're home to over 33,000 aquatic animals representing more than 140 species",
+      "The aquarium panel is 32.88 meters wide, 8.3 meters tall, and 750mm thick",
+      "Our King Croc weighs over 750kg and is over 40 years old",
+      "We feed our animals over 1,000kg of food every week",
+      "The aquarium tunnel provides a 270-degree view of marine life",
+      "Our oldest resident is a 80-year-old giant grouper",
+      "We've successfully bred over 20 species in captivity"
+    ],
+    "records": [
+      "Largest acrylic panel - Guinness World Records",
+      "Most diverse shark collection in the Middle East",
+      "First aquarium in the region with a 48-meter tunnel"
+    ]
+  }
+}
