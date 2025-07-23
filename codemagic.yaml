@@ -10,7 +10,7 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.dubai.parks.day.pass.booking
       vars:
-        APP_ID: 6744613436
+        APP_ID: 6747714061
       flutter: stable
       xcode: latest
       cocoapods: default
