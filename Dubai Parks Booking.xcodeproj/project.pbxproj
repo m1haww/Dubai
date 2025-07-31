@@ -13,10 +13,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.release.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.release.xcconfig"; sourceTree = "<group>"; };
+		4981D94AAA81BEF77261906F /* Pods-Dubai Parks Booking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.release.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.release.xcconfig"; sourceTree = "<group>"; };
 		515BB9E1B1C294ACC5F8E980 /* Pods_Dubai_Parks_Booking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dubai_Parks_Booking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCEF5CF2E0992BA00B7FCEB /* Dubai Parks Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Parks Booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.debug.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.debug.xcconfig"; sourceTree = "<group>"; };
+		C907B9490A7C70F781F8C7D3 /* Pods-Dubai Parks Booking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubai Parks Booking.debug.xcconfig"; path = "Target Support Files/Pods-Dubai Parks Booking/Pods-Dubai Parks Booking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -54,11 +54,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B57F8F6804FC147E022A3C9 /* Pods */ = {
+		03D24ED6C572DF63529A8E90 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */,
-				41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */,
+				C907B9490A7C70F781F8C7D3 /* Pods-Dubai Parks Booking.debug.xcconfig */,
+				4981D94AAA81BEF77261906F /* Pods-Dubai Parks Booking.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 				5CCEF5D12E0992BA00B7FCEB /* Dubai Parks Booking */,
 				5CCEF7172E0AE73E00B7FCEB /* Frameworks */,
 				5CCEF5D02E0992BA00B7FCEB /* Products */,
-				3B57F8F6804FC147E022A3C9 /* Pods */,
+				03D24ED6C572DF63529A8E90 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,12 +323,12 @@
 		};
 		5CCEF5DE2E0992BB00B7FCEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C6F1AB4D21188081AEE6CC /* Pods-Dubai Parks Booking.debug.xcconfig */;
+			baseConfigurationReference = C907B9490A7C70F781F8C7D3 /* Pods-Dubai Parks Booking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Dubai Parks Booking/Preview Content\"";
 				DEVELOPMENT_TEAM = Z24M4HH7WL;
 				ENABLE_PREVIEWS = YES;
@@ -346,7 +346,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dubai.parks.day.pass.booking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -361,12 +361,12 @@
 		};
 		5CCEF5DF2E0992BB00B7FCEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41E589E8F8ABA36759470959 /* Pods-Dubai Parks Booking.release.xcconfig */;
+			baseConfigurationReference = 4981D94AAA81BEF77261906F /* Pods-Dubai Parks Booking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Dubai Parks Booking/Preview Content\"";
 				DEVELOPMENT_TEAM = Z24M4HH7WL;
 				ENABLE_PREVIEWS = YES;
@@ -384,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dubai.parks.day.pass.booking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

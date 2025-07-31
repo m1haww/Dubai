@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct DubaiAquariumDetailView: View {
+    @Environment(\.dismiss) private var dismiss
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -12,13 +13,20 @@ struct DubaiAquariumDetailView: View {
                 // Custom Navigation Bar
                 HStack {
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                        // Try both methods for better iPad compatibility
+                        if UIDevice.current.userInterfaceIdiom == .pad {
+                            presentationMode.wrappedValue.dismiss()
+                        } else {
+                            dismiss()
+                        }
                     }) {
                         Image(systemName: "chevron.left")
                             .foregroundColor(.white)
                             .font(.title2)
-                            .padding(.leading)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 8)
                     }
+                    .contentShape(Rectangle())
                     
                     Text("Dubai Aquarium & Underwater Zoo")
                         .font(.system(size: 20, weight: .semibold))
@@ -38,6 +46,14 @@ struct DubaiAquariumDetailView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(height: 250)
                             .clipped()
+                        
+                        // Map Button
+                        MapButtonView(
+                            locationName: "Georgia Aquarium",
+                            latitude: 33.7634,
+                            longitude: -84.3951
+                        )
+                        .padding(.top, -10)
                         
                         VStack(alignment: .leading, spacing: 24) {
                             // Section 1: Beneath The Sea

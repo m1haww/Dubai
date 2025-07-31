@@ -33,12 +33,8 @@ struct ParkDetailView: View {
                 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
-                        // Park Image
-                        Image(park.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height: 250)
-                            .clipped()
+                        // Image Carousel
+                        ImageCarouselView(baseImageName: park.imageName)
                         
                         VStack(alignment: .leading, spacing: 20) {
                             // Description
@@ -88,6 +84,8 @@ struct ParkDetailView: View {
         name: "Dubai Aquarium",
         imageName: "1",
         description: "Test description",
-        highlights: ["Test highlight"]
+        highlights: ["Test highlight"],
+        latitude: 33.7634,
+        longitude: -84.3951
     ))
 }

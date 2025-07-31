@@ -11,25 +11,33 @@ struct ParksView: View {
                 "Rocky Shore: Where land meets sea, experience rugged beauty where only the toughest survive. Reach out and touch some of the hardier rock pool inhabitants for a truly immersive experience.",
                 "Living Ocean: Venture into this underwater world where coral reefs shimmer and graceful sharks patrol the expanse.",
                 "Get Up Close and Personal: Get nose-to-nose with our incredible inhabitants including playful otters and mischievous penguins!"
-            ]
+            ],
+            latitude: 33.7634,
+            longitude: -84.3951
         ),
         Park(
             name: "The Green Planet",
             imageName: "2",
             description: "An indoor rainforest with over 3,000 plants and animals. Experience the enchanting world of the tropics in the heart of Dubai.",
-            highlights: []
+            highlights: [],
+            latitude: 21.3062,
+            longitude: -157.8587
         ),
         Park(
             name: "Aquaventure Atlantis",
             imageName: "3",
             description: "Dubai's most exciting waterpark with record-breaking rides and slides. Get your adrenaline pumping at the Middle East's leading waterpark.",
-            highlights: []
+            highlights: [],
+            latitude: 28.3684,
+            longitude: -81.5493
         ),
         Park(
             name: "IMG Worlds of Adventure",
             imageName: "4",
             description: "The world's largest indoor theme park spanning 1.5 million square feet. Experience four epic zones with thrilling rides and attractions.",
-            highlights: []
+            highlights: [],
+            latitude: 34.1341,
+            longitude: -118.3215
         )
     ]
     
@@ -93,11 +101,19 @@ struct ParksView: View {
                             // Parks List
                             VStack(spacing: 25) {
                                 ForEach(parks) { park in
-                                    NavigationLink(destination: WebViewScreen(url: getWebURL(for: park), parkName: park.name)) {
-                                        ParkCardView(park: park)
-                                            .padding(.horizontal)
+                                    VStack(spacing: 10) {
+                                        NavigationLink(destination: WebViewScreen(url: getWebURL(for: park), parkName: park.name)) {
+                                            ParkCardView(park: park)
+                                                .padding(.horizontal)
+                                        }
+                                        .buttonStyle(PlainButtonStyle())
+                                        
+                                        MapButtonView(
+                                            locationName: park.name,
+                                            latitude: park.latitude,
+                                            longitude: park.longitude
+                                        )
                                     }
-                                    .buttonStyle(PlainButtonStyle())
                                 }
                             }
                             .padding(.bottom, 32)
@@ -107,6 +123,7 @@ struct ParksView: View {
             }
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

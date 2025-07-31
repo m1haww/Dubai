@@ -6,4 +6,6 @@ struct Park: Identifiable {
     let imageName: String
     let description: String
     let highlights: [String]
+    let latitude: Double
+    let longitude: Double
 }
