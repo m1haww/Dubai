@@ -5,7 +5,12 @@ import FBSDKCoreKit
 
 
 struct ContentView: View {
+    init() {
+        print("🏁 ContentView INIT - Starting app")
+    }
+    
     var body: some View {
-        ParksView()
+        print("🎯 ContentView body - About to show ParksView")
+        return ParksView()
     }
 }

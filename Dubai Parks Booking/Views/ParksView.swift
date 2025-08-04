@@ -78,6 +78,22 @@ struct ParksView: View {
                             .foregroundColor(.white)
                             .padding(.leading, 8)
                         
+                        // Events icon
+                        NavigationLink(destination: EventsView()) {
+                            Image(systemName: "calendar")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
+                        .padding(.leading, 24)
+                        
+                        // Settings/Profile icon - Simple NavigationLink
+                        NavigationLink(destination: ProfileView()) {
+                            Image(systemName: "person.circle.fill")
+                                .font(.system(size: 22))
+                                .foregroundColor(.white)
+                        }
+                        .padding(.leading, 16)
+                        
                         Spacer()
                     }
                     .frame(height: 60)
@@ -95,6 +111,7 @@ struct ParksView: View {
                                     .padding(.top, 20)
                                     .padding(.bottom, 10)
                                     .foregroundColor(Color(hex: "454545"))
+                              
                                 Spacer()
                             }
                             
@@ -107,6 +124,9 @@ struct ParksView: View {
                                                 .padding(.horizontal)
                                         }
                                         .buttonStyle(PlainButtonStyle())
+                                        .simultaneousGesture(TapGesture().onEnded {
+                                            StateProvider.shared.trackParkVisit(park.name)
+                                        })
                                         
                                         MapButtonView(
                                             locationName: park.name,

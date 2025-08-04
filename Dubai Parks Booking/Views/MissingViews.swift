@@ -69,7 +69,7 @@ struct ImageDataView: View {
 }
 
 struct AudioDataView: View {
-    let audioFilePath: Data
+    let audioData: Data
     
     var body: some View {
         Text("Audio View")

@@ -148,7 +148,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate {
         print("================================")
         
         // Test event to verify SDK is working
-        AppEvents.shared.logEvent(.init("fb_sdk_verification_test"))
+        AppEvents.shared.logEvent(AppEvents.Name("fb_sdk_verification_test"))
         print("✅ Test event sent: fb_sdk_verification_test")
     }
     
@@ -160,17 +160,17 @@ final class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate {
         
         if isFirstLaunch {
             // Track app install event
-            AppEvents.shared.logEvent(.init("fb_mobile_first_app_launch"))
+            AppEvents.shared.logEvent(AppEvents.Name("fb_mobile_first_app_launch"))
             print("✅ Event logged: fb_mobile_first_app_launch")
             
             // Log custom install event with additional parameters
             let parameters: [AppEvents.ParameterName: Any] = [
-                .init("install_source"): "organic",
-                .init("app_version"): Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown",
-                .init("device_model"): UIDevice.current.model,
-                .init("ios_version"): UIDevice.current.systemVersion
+                AppEvents.ParameterName("install_source"): "organic",
+                AppEvents.ParameterName("app_version"): Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown",
+                AppEvents.ParameterName("device_model"): UIDevice.current.model,
+                AppEvents.ParameterName("ios_version"): UIDevice.current.systemVersion
             ]
-            AppEvents.shared.logEvent(.init("app_install"), parameters: parameters)
+            AppEvents.shared.logEvent(AppEvents.Name("app_install"), parameters: parameters)
             print("✅ Event logged: app_install with parameters: \(parameters)")
             
             // Mark that the app has been launched
@@ -185,7 +185,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate {
         UserDefaults.standard.set(launchCount, forKey: "AppLaunchCount")
         
         // Log launch event with count
-        AppEvents.shared.logEvent(.init("app_launch"), parameters: [.init("launch_count"): launchCount])
+        AppEvents.shared.logEvent(AppEvents.Name("app_launch"), parameters: [AppEvents.ParameterName("launch_count"): launchCount])
         print("✅ Event logged: app_launch (count: \(launchCount))")
         print("================================")
         
@@ -234,35 +234,42 @@ final class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate {
         
         return handled
     }
+}
+
+@main
+struct Dubai_Parks_BookingApp: App {
     
-    @main
-    struct Dubai_Parks_BookingApp: App {
-        
-        @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-        @Environment(\.scenePhase) private var scenePhase
-        
-        var body: some Scene {
-            WindowGroup {
-                
-                ContentView()
-                    .onChange(of: scenePhase) { newPhase in
-                        if newPhase == .active {
-                            // No need to call applicationDidBecomeActive here as NotificationCenter handles it
-                        }
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @Environment(\.scenePhase) private var scenePhase
+    
+    var body: some Scene {
+        WindowGroup {
+            let _ = print("🚨 MAIN APP: Creating ContentView in WindowGroup")
+            ContentView()
+                .onChange(of: scenePhase) { newPhase in
+                    switch newPhase {
+                    case .active:
+                        StateProvider.shared.startSession()
+                    case .inactive, .background:
+                        StateProvider.shared.endSession()
+                    @unknown default:
+                        break
                     }
-                    .onOpenURL { url in
-                        // Handle Facebook SDK URLs for scene-based apps
-                        ApplicationDelegate.shared.application(
-                            UIApplication.shared,
-                            open: url,
-                            sourceApplication: nil,
-                            annotation: [UIApplication.OpenURLOptionsKey.annotation]
-                        )
-                    }
-            }
+                }
+                .onOpenURL { url in
+                    // Handle Facebook SDK URLs for scene-based apps
+                    ApplicationDelegate.shared.application(
+                        UIApplication.shared,
+                        open: url,
+                        sourceApplication: nil,
+                        annotation: [UIApplication.OpenURLOptionsKey.annotation]
+                    )
+                }
         }
     }
-    //
+}
+
+//
     //extension AppDelegate: UNUserNotificationCenterDelegate {
     //    func userNotificationCenter(
     //        _ center: UNUserNotificationCenter,
@@ -308,4 +315,3 @@ final class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate {
     //            name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
     //    }
     //}
-}
