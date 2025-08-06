@@ -12,32 +12,47 @@ struct ParksView: View {
                 "Living Ocean: Venture into this underwater world where coral reefs shimmer and graceful sharks patrol the expanse.",
                 "Get Up Close and Personal: Get nose-to-nose with our incredible inhabitants including playful otters and mischievous penguins!"
             ],
-            latitude: 33.7634,
-            longitude: -84.3951
+            latitude: 25.197197,
+            longitude: 55.279503
         ),
         Park(
             name: "The Green Planet",
             imageName: "2",
             description: "An indoor rainforest with over 3,000 plants and animals. Experience the enchanting world of the tropics in the heart of Dubai.",
-            highlights: [],
-            latitude: 21.3062,
-            longitude: -157.8587
+            highlights: [
+                "Rainforest: Explore a 4-story indoor tropical rainforest ecosystem",
+                "Wildlife: Meet over 3,000 plants and animals including sloths, toucans, and snakes",
+                "Canopy Walk: Walk through the treetops on elevated walkways",
+                "Educational Programs: Learn about biodiversity and conservation"
+            ],
+            latitude: 25.213722,
+            longitude: 55.258333
         ),
         Park(
             name: "Aquaventure Atlantis",
             imageName: "3",
             description: "Dubai's most exciting waterpark with record-breaking rides and slides. Get your adrenaline pumping at the Middle East's leading waterpark.",
-            highlights: [],
-            latitude: 28.3684,
-            longitude: -81.5493
+            highlights: [
+                "Aquaconda: The world's largest waterslide",
+                "Leap of Faith: A 60-foot near-vertical drop slide",
+                "Shark Attack: Slide through a clear tube surrounded by sharks",
+                "The Rapids: White-water adventure through rapids and waterfalls"
+            ],
+            latitude: 25.130556,
+            longitude: 55.116667
         ),
         Park(
             name: "IMG Worlds of Adventure",
             imageName: "4",
             description: "The world's largest indoor theme park spanning 1.5 million square feet. Experience four epic zones with thrilling rides and attractions.",
-            highlights: [],
-            latitude: 34.1341,
-            longitude: -118.3215
+            highlights: [
+                "Marvel Zone: Meet Spider-Man, Hulk, and other Marvel superheroes",
+                "Cartoon Network Zone: Adventure with Ben 10, The Powerpuff Girls, and more",
+                "Lost Valley Dinosaur Adventure: Journey back to prehistoric times",
+                "IMG Boulevard: Shopping, dining, and entertainment hub"
+            ],
+            latitude: 25.042222,
+            longitude: 55.174167
         )
     ]
     
