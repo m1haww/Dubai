@@ -13,12 +13,8 @@ struct DubaiAquariumDetailView: View {
                 // Custom Navigation Bar
                 HStack {
                     Button(action: {
-                        // Try both methods for better iPad compatibility
-                        if UIDevice.current.userInterfaceIdiom == .pad {
-                            presentationMode.wrappedValue.dismiss()
-                        } else {
-                            dismiss()
-                        }
+                        // Post notification to go back to ParksView
+                        NotificationCenter.default.post(name: Notification.Name("DismissAquarium"), object: nil)
                     }) {
                         Image(systemName: "chevron.left")
                             .foregroundColor(.white)

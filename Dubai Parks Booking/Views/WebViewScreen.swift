@@ -3,9 +3,16 @@ import SwiftUI
 struct WebViewScreen: View {
     let url: String
     let parkName: String
+    let isFromOnboarding: Bool
     @Environment(\.presentationMode) var presentationMode
     @StateObject private var stateProvider = StateProvider.shared
     @State private var showReviewAlert = false
+    
+    init(url: String, parkName: String, isFromOnboarding: Bool = false) {
+        self.url = url
+        self.parkName = parkName
+        self.isFromOnboarding = isFromOnboarding
+    }
     
     var body: some View {
         ZStack {
@@ -16,7 +23,11 @@ struct WebViewScreen: View {
                 // Custom Navigation Bar
                 HStack {
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                        if isFromOnboarding {
+                            NotificationCenter.default.post(name: Notification.Name("DismissWebView"), object: nil)
+                        } else {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     }) {
                         Image(systemName: "chevron.left")
                             .foregroundColor(.white)
